@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAYER</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        background-color: darkblue;
+        color: white;
+        border-color: 2px black;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        margin-bottom: 10px;
+      }
+      img {
+        width: 30px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
+      button {
+        background-color: blue;
+        margin: 5px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        font-size: xx-large;
+        border: 2px solid transparent;
+      }
+      button:hover{
+        transform: scale(1.1);
+      }
+      button:focus {
+        background-color: rgb(238, 212, 10);
+      }
+      input {
+        border-radius: 15px;
+        height: 25px;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      .menu {
+        display: flex;
+        flex-direction: row;
+        margin: 30px;
+      }
+      #fetch-button {
+        font-size: medium;
+        margin: 10px;
+      }
+      #reload {
+        font-size: medium;
+      }
+      cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Piedra, papel o tijeras</h1>
+      <h3>Crea tu usuario</h3>
+  
+      <p id="Countdown"></p>
+      
+      <label for="Name">Nombre</label>
+      <input id="Name" type="text">
+  
+      <div class="menu">
+          <cart>
+            <button id="Piedra">🪨</button>
+            <label for="Piedra">Piedra</label>
+          </cart>
+
+          <cart>
+            <button id="Papel">📃</button>
+            <label for="Papel">Papel</label>
+          </cart>
+  
+          <cart>
+            <button id="Tijeras">✂️</button>
+            <label for="tijeras">Tijeras</label>
+          </cart>
+      </div>
+  
+      <p>Si no creas un usuario ni eliges una acción, se crearán aleatoriamente.</p>
+  
+      <button id="fetch-button">Enviar</button>
+      <button id="reload">Reiniciar</button>
+      <div id="data-container"></div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESULTS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: darkblue;
+        color: white;
+      }
+      .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        max-width: 100vw; 
+        height: 200px;
+        background-color: red;
+        border-radius: 10px;
+      }
+      #data-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        box-sizing: content-box;
+        max-width: 100em;
+        max-height: 50em;
+        border: 2px solid red;
+        border-radius: 10px;
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        box-sizing: content-box;
+        width: 125px;
+        border-radius: 10px;
+        height: 150px;
+        border: 2px red;
+      }
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <h1>RESULTADOS</h1>
+      <h2 id="results"></h2>
+      <h3 id="counter"></h3>
+    </div>
+    <div id="data-container"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
